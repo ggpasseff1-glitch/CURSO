@@ -10,6 +10,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- CONFIGURAÇÃO DO LOWIFY (SIMULAÇÃO) -->
+    <script>
+        // Simulação de entrega automática
+        // No Lowify real, você configuraria a entrega automática na plataforma
+        console.log('Página de obrigado - Acesso liberado!');
+        
+        // Função para simular download automático (opcional)
+        function autoDownload() {
+            // Esta função seria configurada no Lowify para entrega automática
+            console.log('Ebooks prontos para download');
+        }
+        
+        // Executar quando a página carregar
+        window.onload = autoDownload;
+    </script>
 </head>
 <body class="thank-you-page">
     <div class="thank-you-container">
@@ -18,83 +34,102 @@
                 <i class="fas fa-check-circle"></i>
             </div>
             
-            <h1>Parabéns! Seu acesso foi liberado! 🎉</h1>
+            <h1>Parabéns! Sua compra foi aprovada! 🎉</h1>
             <p class="thank-you-subtitle">Você acaba de dar o primeiro passo rumo à sua liberdade financeira digital.</p>
             
-            <div class="access-box">
-                <h2><i class="fas fa-download"></i> SEU EBOOK ESTÁ PRONTO PARA DOWNLOAD</h2>
-                <a href="ebook/Trilha_da_Renda_Digital_2026.pdf" class="download-button" download>
-                    <i class="fas fa-file-pdf"></i> BAIXAR EBOOK COMPLETO (PDF)
-                </a>
-                <p class="file-size">Tamanho: ~5 MB • Compatível com celular, tablet e computador</p>
+            <!-- IMPORTANTE: NO LOWIFY REAL, VOCÊ CONFIGURA A ENTREGA AUTOMÁTICA -->
+            <div class="delivery-info">
+                <div class="info-box">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Entrega Automática</h3>
+                    <p>Os links de download dos ebooks foram enviados para o seu email. Verifique sua caixa de entrada e pasta de spam.</p>
+                </div>
             </div>
             
-            <div class="bonus-access">
-                <h3><i class="fas fa-gift"></i> SEUS BÔNUS EXCLUSIVOS:</h3>
-                <div class="bonus-list">
-                    <div class="bonus-item">
-                        <div class="bonus-icon"><i class="fas fa-file-excel"></i></div>
-                        <div class="bonus-info">
-                            <h4>Planilha de Planejamento Financeiro</h4>
-                            <a href="#" class="bonus-link">Baixar agora</a>
+            <div class="access-box">
+                <h2><i class="fas fa-download"></i> SEUS EBOOKS ESTÃO PRONTOS</h2>
+                
+                <!-- EBOOK PRINCIPAL -->
+                <div class="ebook-download">
+                    <div class="ebook-info">
+                        <div class="ebook-icon"><i class="fas fa-book"></i></div>
+                        <div class="ebook-details">
+                            <h4>Trilha da Renda Digital 2026</h4>
+                            <p>Guia completo com estratégias de renda online para 2026</p>
+                            <span class="file-info">PDF • 12 Módulos • Atualizado 2026</span>
                         </div>
                     </div>
-                    <div class="bonus-item">
-                        <div class="bonus-icon"><i class="fas fa-clipboard-list"></i></div>
-                        <div class="bonus-info">
-                            <h4>Checklist de Lançamento em 7 Dias</h4>
-                            <a href="#" class="bonus-link">Baixar agora</a>
-                        </div>
-                    </div>
-                    <div class="bonus-item">
-                        <div class="bonus-icon"><i class="fas fa-users"></i></div>
-                        <div class="bonus-info">
-                            <h4>Acesso à Comunidade no Telegram</h4>
-                            <a href="https://t.me/joinchat/SEU_LINK_AQUI" class="bonus-link" target="_blank">Entrar na comunidade</a>
-                        </div>
-                    </div>
-                    <div class="bonus-item">
-                        <div class="bonus-icon"><i class="fas fa-video"></i></div>
-                        <div class="bonus-info">
-                            <h4>Workshop: IA para Iniciantes</h4>
-                            <a href="#" class="bonus-link">Assistir agora</a>
-                        </div>
-                    </div>
+                    <a href="#" class="download-btn" id="downloadMain">
+                        <i class="fas fa-download"></i> BAIXAR AGORA
+                    </a>
                 </div>
+                
+                <!-- EBOOK BÔNUS -->
+                <div class="ebook-download bonus">
+                    <div class="ebook-info">
+                        <div class="ebook-icon"><i class="fas fa-gift"></i></div>
+                        <div class="ebook-details">
+                            <h4>Desvende o Poder do Foco e da Produtividade</h4>
+                            <p>Seu Guia Definitivo para o Sucesso (Bônus Exclusivo)</p>
+                            <span class="file-info">PDF • 6 Módulos • Bônus Gratuito</span>
+                        </div>
+                    </div>
+                    <a href="#" class="download-btn" id="downloadBonus">
+                        <i class="fas fa-download"></i> BAIXAR BÔNUS
+                    </a>
+                </div>
+                
+                <p class="download-note">
+                    <i class="fas fa-info-circle"></i> 
+                    Os ebooks estão em formato PDF e são compatíveis com celular, tablet e computador.
+                </p>
             </div>
             
             <div class="next-steps">
                 <h3><i class="fas fa-play-circle"></i> PRÓXIMOS PASSOS RECOMENDADOS:</h3>
                 <ol>
-                    <li><strong>Baixe o ebook</strong> e salve no seu dispositivo</li>
-                    <li><strong>Entre na comunidade</strong> no Telegram para networking</li>
-                    <li><strong>Comece pelo Módulo 1</strong> - Mentalidade Empreendedora</li>
+                    <li><strong>Baixe ambos os ebooks</strong> e salve no seu dispositivo</li>
+                    <li><strong>Comece pelo Módulo 1</strong> do ebook principal</li>
                     <li><strong>Dedique 30 minutos por dia</strong> para estudar e aplicar</li>
-                    <li><strong>Tire suas dúvidas</strong> na comunidade sempre que precisar</li>
+                    <li><strong>Use o ebook bônus</strong> para melhorar sua produtividade</li>
+                    <li><strong>Tire dúvidas</strong> pelo email ou WhatsApp quando precisar</li>
                 </ol>
             </div>
             
-            <div class="community-cta">
-                <h3><i class="fas fa-comments"></i> JUNTE-SE À NOSSA COMUNIDADE</h3>
-                <p>Mais de 2.000 empreendedores digitais trocando experiências, tirando dúvidas e se ajudando mutuamente.</p>
-                <a href="https://t.me/joinchat/SEU_LINK_AQUI" class="community-button" target="_blank">
-                    <i class="fab fa-telegram"></i> ENTRAR NO GRUPO DO TELEGRAM
-                </a>
-            </div>
-            
-            <div class="support">
+            <div class="support-box">
                 <h3><i class="fas fa-life-ring"></i> PRECISA DE AJUDA?</h3>
-                <p>Entre em contato com nosso suporte: <a href="mailto:suporte@trilhadigital.com">suporte@trilhadigital.com</a></p>
-                <p>Respondemos em até 24 horas úteis.</p>
+                <p>Entre em contato com nosso suporte:</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email:</strong>
+                            <a href="mailto:tawanoliveira.28@gmail.com">tawanoliveira.28@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <strong>WhatsApp:</strong>
+                            <a href="https://wa.me/5585987300842" target="_blank">(85) 98730-0842</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="response-time">Resposta em até 24 horas úteis</p>
             </div>
             
             <div class="thank-you-footer">
                 <p>Obrigado por confiar em nós! Estamos ansiosos para ver seus resultados incríveis.</p>
-                <p class="signature">— Equipe Trilha da Renda Digital</p>
+                <p class="signature">— Tawan Oliveira</p>
                 
-                <a href="index.html" class="back-home">
-                    <i class="fas fa-arrow-left"></i> Voltar para a página inicial
-                </a>
+                <div class="action-buttons">
+                    <a href="index.html" class="back-home">
+                        <i class="fas fa-arrow-left"></i> Voltar para a página inicial
+                    </a>
+                    <button class="check-email" onclick="alert('Verifique sua caixa de entrada e pasta de spam!')">
+                        <i class="fas fa-envelope-open"></i> Verificar Email
+                    </button>
+                </div>
             </div>
         </div>
     </div>
