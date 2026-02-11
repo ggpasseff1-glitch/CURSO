@@ -77,51 +77,43 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Hotmart Checkout (exemplo de integração)
-function openHotmartCheckout() {
-    // Substitua com seu código Hotmart
-    const hotmartUrl = 'https://pay.hotmart.com/SEU_LINK_AQUI';
-    window.open(hotmartUrl, '_blank');
-}
-
-// Adicionar evento de clique ao botão de compra
-document.addEventListener('DOMContentLoaded', function() {
-    const buyButtons = document.querySelectorAll('#buyButton, .final-button[href*="hotmart"]');
+// Simulação de download (na página de obrigado)
+if (window.location.pathname.includes('obrigado') || window.location.pathname.endsWith('obrigado.html')) {
+    // Simular links de download (no Lowify real, você configuraria links reais)
+    const downloadMain = document.getElementById('downloadMain');
+    const downloadBonus = document.getElementById('downloadBonus');
     
-    buyButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            if (this.getAttribute('href').includes('SEU_LINK_AQUI')) {
-                e.preventDefault();
-                alert('Configure seu link do Hotmart no código!');
-                // Substitua a linha acima por: openHotmartCheckout();
-            }
+    if (downloadMain) {
+        downloadMain.addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('No Lowify real, este botão baixaria automaticamente o ebook principal. Configure a entrega automática na plataforma Lowify.');
+            // No Lowify real: window.location.href = 'LINK_DO_SEU_EBOOK_PRINCIPAL.pdf';
         });
-    });
-});
-
-// Animação de entrada para elementos
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animate-in');
-        }
-    });
-}, observerOptions);
-
-// Observar elementos para animação
-document.querySelectorAll('.testimonial-card, .pain-item, .bonus-item, .step').forEach(el => {
-    observer.observe(el);
-});
-
-// Download tracking (para página de obrigado)
-if (window.location.pathname.includes('obrigado')) {
-    console.log('Página de obrigado carregada - acesso liberado!');
+    }
     
-    // Pode adicionar Google Analytics ou outro tracking aqui
-    // Exemplo: gtag('event', 'purchase', { ... });
+    if (downloadBonus) {
+        downloadBonus.addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('No Lowify real, este botão baixaria automaticamente o ebook bônus. Configure a entrega automática na plataforma Lowify.');
+            // No Lowify real: window.location.href = 'LINK_DO_SEU_EBOOK_BONUS.pdf';
+        });
+    }
 }
+
+// WhatsApp Click Tracking
+document.querySelectorAll('a[href*="whatsapp"]').forEach(link => {
+    link.addEventListener('click', function() {
+        console.log('Clique no WhatsApp detectado');
+        // Você pode adicionar Google Analytics aqui
+        // gtag('event', 'click', { 'event_category': 'WhatsApp', 'event_label': 'Suporte' });
+    });
+});
+
+// Email Click Tracking
+document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+    link.addEventListener('click', function() {
+        console.log('Clique no email detectado');
+        // Você pode adicionar Google Analytics aqui
+        // gtag('event', 'click', { 'event_category': 'Email', 'event_label': 'Suporte' });
+    });
+});
