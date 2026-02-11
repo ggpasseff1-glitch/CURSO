@@ -1,15 +1,12 @@
-# Trilha da Renda Digital 2026 - Página de Vendas
+# 🚀 COMO USAR ESTE PROJETO
 
-Página de vendas profissional para o ebook "Trilha da Renda Digital: Estratégias Comprovadas para o Sucesso em 2026".
+## 📋 PRÉ-REQUISITOS
+1. Conta no GitHub
+2. Conta no Lowify
+3. Os dois ebooks em PDF
+4. Capas dos ebooks em JPG/PNG
 
-## 🚀 Como Configurar no GitHub Pages
+## 🛠️ PASSO A PASSO
 
-1. **Crie um repositório no GitHub:**
-   - Nome: `trilha-renda-digital`
-   - Público
-   - Adicione um arquivo README.md
-
-2. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/seuusuario/trilha-renda-digital.git
-   cd trilha-renda-digital
+### 1. PREPARAR OS ARQUIVOS
+Crie estas pastas e arquivos:
